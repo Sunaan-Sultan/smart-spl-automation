@@ -13,6 +13,7 @@ import { CForm,
 function createteam() {
   return (
     <>
+    <div className='header2'>Create Team</div>
       <CForm>
         <div className="mb-3">
           <CFormLabel htmlFor="exampleFormControlTextarea1">Enter Student Name</CFormLabel>

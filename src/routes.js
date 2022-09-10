@@ -1,5 +1,4 @@
 import React from 'react'
-import createteam from './views/createteam/createteam'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -53,6 +52,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const CreateTeam = React.lazy(() => import('./views/createteam/createteam'))
 const ReportGenerator = React.lazy(() => import('./views/reportgenerator/reportgenerator'))
 const Announcements = React.lazy(() => import('./views/announcements/announcements'))
+const Projects = React.lazy(() => import('./views/dashboard/projects/projects'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -102,6 +102,7 @@ const routes = [
   { path: '/createteam', name: 'CreateTeam', element: CreateTeam },
   { path: '/reportgenerator', name: 'ReportGenerator', element: ReportGenerator },
   { path: '/announcements', name: 'Announcements', element: Announcements },
+  { path: '/dashboard/projects', name: 'Projects', element: Projects },
 ]
 
 export default routes

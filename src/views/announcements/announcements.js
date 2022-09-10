@@ -19,6 +19,7 @@ import { CForm,
 function announcements() {
   return (
     <>
+    <div className='header2'>Announcements</div>
     <CForm>
        <div className="mb-3">
         <CFormTextarea size="lg" id="exampleFormControlTextarea1" rows="5" cols="2" placeholder='Announce something to class'></CFormTextarea>

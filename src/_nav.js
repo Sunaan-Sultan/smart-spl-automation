@@ -13,7 +13,7 @@ import {
   cilSpeedometer,
   cilStar,
 } from '@coreui/icons'
-import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { CNavGroup, CNavItem, CNavTitle, CButton } from '@coreui/react'
 
 const _nav = [
   {
