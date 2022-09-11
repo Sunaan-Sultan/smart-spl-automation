@@ -35,18 +35,18 @@ function Dashboard() {
         <CModalHeader>
           <CModalTitle>Create Room</CModalTitle>
         </CModalHeader>
-      <CModalBody>
-        <CFormLabel htmlFor="exampleFormControlTextarea1">Name: </CFormLabel>
-        <CFormInput type="text" placeholder="Insert Room Name" aria-label="default input example"/>
-        <CFormLabel className='description' htmlFor="exampleFormControlTextarea1">Description: </CFormLabel>
-        <CFormTextarea id="exampleFormControlTextarea1" rows="3"></CFormTextarea>
-      </CModalBody>
-      <CModalFooter>
-        <CButton color="secondary" onClick={() => setVisible(false)}>
-          Close
-        </CButton>
-        <CButton color="primary">Save changes</CButton>
-      </CModalFooter>
+        <CModalBody>
+          <CFormLabel htmlFor="exampleFormControlTextarea1">Name: </CFormLabel>
+          <CFormInput type="text" placeholder="Insert Room Name" aria-label="default input example"/>
+          <CFormLabel className='description' htmlFor="exampleFormControlTextarea1">Description: </CFormLabel>
+          <CFormTextarea id="exampleFormControlTextarea1" rows="3"></CFormTextarea>
+        </CModalBody>
+        <CModalFooter>
+          <CButton color="secondary" onClick={() => setVisible(false)}>
+            Close
+          </CButton>
+          <CButton color="primary">Save changes</CButton>
+        </CModalFooter>
     </CModal>
     </div>
 

@@ -53,6 +53,7 @@ const CreateTeam = React.lazy(() => import('./views/createteam/createteam'))
 const ReportGenerator = React.lazy(() => import('./views/reportgenerator/reportgenerator'))
 const Announcements = React.lazy(() => import('./views/announcements/announcements'))
 const Projects = React.lazy(() => import('./views/dashboard/projects/projects'))
+const Task = React.lazy(() => import('./views/dashboard/projects/task/task'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -103,6 +104,7 @@ const routes = [
   { path: '/reportgenerator', name: 'ReportGenerator', element: ReportGenerator },
   { path: '/announcements', name: 'Announcements', element: Announcements },
   { path: '/dashboard/projects', name: 'Projects', element: Projects },
+  { path: '/dashboard/projects/task', name: 'Task', element: Task },
 ]
 
 export default routes

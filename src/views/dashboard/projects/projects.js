@@ -34,7 +34,7 @@ function projects() {
  
   return (
     <>
-        <div className='header2'>SPL
+        <div className='header2'>Projects
             <CButton className='projects-button' color="info" variant="outline" onClick={() => setVisible(!visible)}>Create Project</CButton>
 
             <CModal alignment="center" visible={visible} onClose={() => setVisible(false)}>
@@ -59,7 +59,6 @@ function projects() {
             </CModalFooter>
             </CModal>
         </div>
-        <div className='header2'>Projects</div>
 
             
         <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
@@ -72,7 +71,7 @@ function projects() {
                     This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.
                     </CCardText>
-                    <a href="./projects/task" className="stretched-link"></a>
+                    <a href="projects/task" className="stretched-link"></a>
                 </CCardBody>
                 <CCardFooter>
                     <small className="text-medium-emphasis">Last updated 3 mins ago</small>

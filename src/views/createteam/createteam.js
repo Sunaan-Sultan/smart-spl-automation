@@ -7,7 +7,11 @@ import { CForm,
   CDropdownToggle,
   CDropdownMenu,
   CDropdownItem,
-  CButton
+  CButton,
+  CAccordion,
+  CAccordionItem,
+  CAccordionHeader,
+  CAccordionBody,
  } from '@coreui/react'
 
 function createteam() {
@@ -30,11 +34,36 @@ function createteam() {
           </CDropdown>
           <CButton className='createteam-button' color="info" variant="outline">Add</CButton>
         </div>
-        <div className="category">
-          <CFormLabel htmlFor="exampleFormControlTextarea1">Category A</CFormLabel>
-          <CFormLabel className="categoryB">Category B</CFormLabel>
-          <CFormLabel className="categoryC">Category C</CFormLabel>
+
+        <div className='createteam-accordion'>
+        <CAccordion flush>
+          <CAccordionItem itemKey={1} className='accordion'>
+            <CAccordionHeader>Category A</CAccordionHeader>
+              <CAccordionBody>
+                ...
+              </CAccordionBody>
+          </CAccordionItem>
+        </CAccordion>
+
+        <CAccordion flush>
+          <CAccordionItem itemKey={1} className='accordion'>
+            <CAccordionHeader>Category B</CAccordionHeader>
+              <CAccordionBody>
+                ...
+              </CAccordionBody>
+          </CAccordionItem>
+        </CAccordion>
+
+        <CAccordion flush>
+          <CAccordionItem itemKey={1} className='accordion'>
+            <CAccordionHeader>Category C</CAccordionHeader>
+              <CAccordionBody>
+                ...
+              </CAccordionBody>
+          </CAccordionItem>
+        </CAccordion>
         </div>
+        
         <div class="button2">
         <CButton color="info" variant="outline">Create Team</CButton>
         </div>
