@@ -17,7 +17,7 @@ function createteam() {
       <CForm>
         <div className="mb-3">
           <CFormLabel htmlFor="exampleFormControlTextarea1">Enter Student Name</CFormLabel>
-          <CFormTextarea size="lg" id="exampleFormControlTextarea1" rows="5" cols="2"></CFormTextarea>
+          <CFormTextarea size="lg" id="exampleFormControlTextarea1" rows="5" cols="2" isMulti></CFormTextarea>
         </div>
         <div >
           <CDropdown>
