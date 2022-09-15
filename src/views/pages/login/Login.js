@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,Navigate } from 'react-router-dom'
 import {
   CButton,
   CCard,
@@ -46,9 +46,11 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
+                      <Link to="/layout">
                         <CButton color="primary" className="px-4">
                           Login
                         </CButton>
+                      </Link>
                       </CCol>
                       <CCol xs={6} className="text-right">
                         <CButton color="link" className="px-0">
