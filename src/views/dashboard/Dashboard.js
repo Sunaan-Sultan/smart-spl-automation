@@ -76,7 +76,7 @@ function Dashboard() {
               This is a wider card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.
             </CCardText>
-            <a href="#" className="stretched-link"></a>
+            <a href="./dashboard/projects2" className="stretched-link"></a>
           </CCardBody>
           <CCardFooter>
             <small className="text-medium-emphasis">Last updated 3 mins ago</small>

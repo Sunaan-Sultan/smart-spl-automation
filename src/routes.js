@@ -54,6 +54,8 @@ const ReportGenerator = React.lazy(() => import('./views/reportgenerator/reportg
 const Announcements = React.lazy(() => import('./views/announcements/announcements'))
 const Projects = React.lazy(() => import('./views/dashboard/projects/projects'))
 const Task = React.lazy(() => import('./views/dashboard/projects/task/task'))
+const Projects2 = React.lazy(() => import('./views/dashboard/projects2/projects2'))
+const Task2 = React.lazy(() => import('./views/dashboard/projects2/task2/task2'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -105,6 +107,8 @@ const routes = [
   { path: '/announcements', name: 'Announcements', element: Announcements },
   { path: '/dashboard/projects', name: 'Projects', element: Projects },
   { path: '/dashboard/projects/task', name: 'Task', element: Task },
+  { path: '/dashboard/projects2', name: 'Projects2', element: Projects2 },
+  { path: '/dashboard/projects2/task2', name: 'Task2', element: Task2 },
 ]
 
 export default routes
