@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link,Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './login.css'
 import {
   CButton,
   CCard,
@@ -64,14 +65,20 @@ const Login = () => {
               <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
-                    <h2>Smart SPL Automation System</h2>
-                    <p>
-                      Sign Up
-                    </p>
-                    <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
+                    <h1>Smart SPL Automation System</h1>
+                      Sign up as {' '}
+                    <Link to="/register" className='link'>
+                      student 
+                      {/* <CButton color="primary" className="mt-3" active tabIndex={-1}>
                         Register Now!
-                      </CButton>
+                      </CButton> */}
+                    </Link>
+                    {' '} or {' '}
+                    <Link to="/register2" className='link'>
+                      teacher
+                      {/* <CButton color="primary" className="mt-3" active tabIndex={-1}>
+                        Register Now!
+                      </CButton> */}
                     </Link>
                   </div>
                 </CCardBody>

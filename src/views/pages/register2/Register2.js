@@ -14,7 +14,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
-const Register = () => {
+const Register2 = () => {
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
@@ -51,7 +51,8 @@ const Register = () => {
                     </CInputGroupText>
                     <CFormInput
                       type="text"
-                      placeholder="Roll Number"
+                      placeholder="Designation"
+                      
                     />
                   </CInputGroup>
                   <div className="d-grid">
@@ -67,4 +68,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register2
