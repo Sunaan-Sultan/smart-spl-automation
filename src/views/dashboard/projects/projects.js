@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import Select from 'react-select'
 import reactIMG from './../../../assets/images/theme.png'
@@ -24,15 +25,30 @@ import { CRow,
    } from '@coreui/react'
 
 function projects() {
-    
+    const {joinCode} = useParams();
     const [visible, setVisible] = useState(false)
     const options = [
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' }
       ]
- 
+      const getData=React.useCallback(async()=>{
+        axios.get('http://127.0.0.1:8000/api/spl-manager/spl/')
+        .then(res => {
+            console.log(res.data)
+            setSpls(res.data) 
+    
+        })
+        .catch(err => {
+            console.log(err)
+        })
+      },[visible])
+      useEffect(() => {
+        getData()
+    }, [])
+
   return (
+
     <>
         <div className='header2'>Projects
             <CButton className='projects-button' color="info" variant="outline" onClick={() => setVisible(!visible)}>Create Project</CButton>
